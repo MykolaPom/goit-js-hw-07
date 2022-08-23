@@ -7,14 +7,14 @@ function createGalleryOfImages(images) {
   return images
     .map((image) => {
       return `
-    <div class="gallery__item">
+    <li class="gallery__item">
 <a class="gallery__item" href="${image.original}">
   <img 
   class="gallery__image" 
   src="${image.preview}" 
   alt="${image.description}" />
 </a>
-    </div>
+    </li>
     `;
     })
     .join("");
